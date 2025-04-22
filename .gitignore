@@ -1,3 +1,34 @@
 /target
 *.csv
 *.code-workspace
+# Rust specific
+/target/
+**/*.rs.bk
+
+# Build artifacts
+*.rlib
+# *.lock
+
+# Dependency directory
+/.cargo/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Environment variables
+.env
+
+# CSV data files
+data/dates/gb/*.csv
+data/dates/gb/cleaned/*.csv
+
+# Podman/Container-related files
+podman-compose.override.yml
